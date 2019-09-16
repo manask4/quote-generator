@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Slab', serif;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+button, a {
+  padding: 10px 15px;
+  text-align: center;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #7986CB;
+  color: #fff;
+  transition: 0.3s;
+}
+
+button:hover, a:hover {
+  transition: 0.3s;
+  background-color: #3949AB;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  opacity: 9;
+}
+
+.card {
+  width: 50%;
+  opacity: 0.9;
+  padding: 2rem 4rem;
+  background-color: #fafafa;
+  border-radius: 15px;
+}
+
+#quote-box-body {
+  display: flex;
+  flex-direction: column;
+}
+
+#author {
+  align-self: flex-end;
+  font-size: 1.2em;
+  color: #4C566A;
+}
+
+.footer-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+#quote-icon {
+  font-size: 2rem;
+  vertical-align: top;
+  padding-right: 0.5em;
+}
+
+#text {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  color: #3B4252;
+}
+
+@media (max-width: 600px) {
+  #text {
+    font-size: 2rem;
+  }
+
+  .card {
+    padding: 1.5rem 2rem;
+    width: 60%;
+  }
+}
