@@ -11,7 +11,7 @@ p {
   margin-bottom: 15px;
 }
 
-button, a {
+.footer-buttons > * {
   padding: 10px 15px;
   text-align: center;
   outline: none;
@@ -23,17 +23,17 @@ button, a {
   transition: 0.3s;
 }
 
-button:hover, a:hover {
+.footer-buttons > *:hover {
   transition: 0.3s;
   background-color: #3949AB;
 }
 
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  opacity: 9;
 }
 
 .card {
@@ -70,6 +70,10 @@ button:hover, a:hover {
   font-family: 'Dancing Script', cursive;
   font-size: 3rem;
   color: #3B4252;
+}
+
+#credits {
+  padding: 1rem;
 }
 
 @media (max-width: 600px) {
