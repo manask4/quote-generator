@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Quote for today</title>
+  <link rel="manifest" href="manifest.json">
   <link rel="stylesheet" href="main.css">
 </head>
 
@@ -31,5 +32,10 @@
   </section>
   <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
   <script defer src="./main.js"></script>
+  <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js');
+  }
+  </script>
 </body>
 </html>
